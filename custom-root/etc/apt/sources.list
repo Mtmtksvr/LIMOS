@@ -1,0 +1,5 @@
+deb [trusted=yes] file:/run/live/medium yirmibes-deb main contrib non-free non-free-firmware
+deb http://depo.pardus.org.tr/pardus yirmibes-deb main contrib non-free non-free-firmware
+deb-src http://depo.pardus.org.tr/pardus yirmibes-deb main contrib non-free non-free-firmware
+deb http://depo.pardus.org.tr/guvenlik yirmibes-deb/updates main contrib non-free non-free-firmware
+deb-src http://depo.pardus.org.tr/guvenlik yirmibes-deb/updates main contrib non-free non-free-firmware

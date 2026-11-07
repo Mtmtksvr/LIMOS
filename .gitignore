@@ -1,0 +1,110 @@
+cat >> .gitignore <<'EOF'
+
+# Generated ISO contents and installed system files
+/custom-disk/
+/custom-root/usr/
+/custom-root/opt/
+/custom-root/var/
+/partition-1.img
+EOF
+
+
+cat >> .gitignore <<'EOF'
+
+# Sensitive system configuration
+/custom-root/etc/sudoers
+/custom-root/etc/sudoers.d/
+/custom-root/etc/polkit-1/rules.d/
+/custom-root/etc/ssl/private/
+/custom-root/etc/credstore/
+/custom-root/etc/credstore.encrypted/
+/custom-root/etc/NetworkManager/system-connections/
+/custom-root/etc/wireguard/
+EOF
+# Sensitive system files
+/custom-root/etc/**/opasswd*
+/custom-root/etc/**/shadow*
+/custom-root/etc/**/gshadow*
+/custom-root/etc/**/passwd-
+/custom-root/etc/**/group-
+/custom-root/etc/**/chap-secrets
+/custom-root/etc/**/pap-secrets
+/custom-root/etc/**/*.keytab
+/custom-root/etc/ppp/
+/custom-root/etc/security/
+EOF
+
+# Sensitive backup files
+/custom-root/etc/gshadow-
+/custom-root/etc/shadow-
+/custom-root/etc/passwd-
+/custom-root/etc/group-
+
+# Inaccessible system rules
+/custom-root/etc/polkit-1/rules.d/
+EOF
+custom-root/usr/lib/python3/dist-packages/tornado/test/test.key
+**/tornado/test/test.key
+
+/custom-root/etc/shadow
+/custom-root/etc/gshadow
+/custom-root/etc/.pwd.lock
+/custom-root/etc/machine-id
+
+# Git backup
+.git-backup/
+
+# Private keys
+*.p12
+*.pfx
+
+# User history
+**/.bash_history
+**/.lesshst
+
+# SSH private data
+**/.ssh/
+
+# Logs
+**/var/log/
+
+# Temporary files
+**/var/cache/
+**/run/
+
+# User-specific data
+**/root/
+**/var/lib/bluetooth/
+**/var/lib/NetworkManager/
+**/var/lib/sddm/
+**/var/lib/private/
+**/var/spool/cron/
+
+# Sensitive system files
+**/etc/ssl/private/
+**/etc/credstore/
+**/etc/credstore.encrypted/
+**/etc/shadow
+**/etc/gshadow
+**/etc/machine-id
+
+# Temporary package files
+**/var/lib/apt/lists/partial/
+/custom-disk/live/filesystem.squashfs
+/custom-disk/live/initrd.xz
+/custom-disk/pool/main/l/linux-signed-amd64/linux-image-6.12.95+deb13-amd64_6.12.95-1_amd64.deb
+/custom-root/boot/initrd.img-6.12.111+deb13-amd64
+/custom-root/boot/initrd.img-6.12.95+deb13-amd64
+/custom-root/opt/onlyoffice/desktopeditors/libcef.so
+/custom-root/usr/lib/firefox-esr/browser/omni.ja
+/custom-root/usr/lib/firefox-esr/libxul.so
+/custom-root/usr/lib/x86_64-linux-gnu/libLLVM.so.19.1
+/custom-root/usr/lib/x86_64-linux-gnu/libQt6WebEngineCore.so.6.8.2
+/custom-root/var/lib/apt/lists/depo.pardus.org.tr_pardus_dists_yirmibes-deb_main_binary-amd64_Packages
+/custom-root/var/lib/apt/lists/depo.pardus.org.tr_pardus_dists_yirmibes-deb_main_source_Sources
+/custom-root/etc/ppp/chap-secrets
+/custom-root/etc/ppp/pap-secrets
+/custom-root/etc/security/opasswd
+/custom-root/etc/security/opasswd.old
+/custom-root/etc/sudoers
+/custom-root/etc/sudoers.d/

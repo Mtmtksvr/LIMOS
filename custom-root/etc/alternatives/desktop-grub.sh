@@ -1,0 +1,1 @@
+/usr/share/desktop-base/bilge-theme/grub/grub_background.sh

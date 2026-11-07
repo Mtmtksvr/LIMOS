@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+
+echo "${1}loadfont /boot/grub/terminus-14.pf2"
+echo "${1}set menu_color_normal=white/black"
+echo "${1}set menu_color_highlight=black/white"

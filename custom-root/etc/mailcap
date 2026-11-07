@@ -1,0 +1,260 @@
+###############################################################################
+#
+#  MIME media types and programs that process those types
+#
+#  Much of this file is generated automatically by the program "update-mime".
+#  Please see the "update-mime" man page for more information.
+#
+#  Users can add their own rules if they wish by creating a ".mailcap"
+#  file in their home directory.  Entries included there will take
+#  precedence over those listed here.
+#
+###############################################################################
+
+
+###############################################################################
+#
+#  User section follows:  Any entries included in this section will take
+#  precedence over those created by "update-mime".  DO NOT CHANGE the
+#  "User Section Begins" and "User Section Ends" lines, or anything outside
+#  of this section!
+#
+
+# ----- User Section Begins ----- #
+# -----  User Section Ends  ----- #
+
+###############################################################################
+
+text/plain; less %s; needsterminal
+application/x-troff-man; /usr/bin/man -X100 -l %s; test=test -n "$DISPLAY" -a -e /usr/bin/gxditview; description=Man page
+text/troff; /usr/bin/man -X100 -l %s; test=test -n "$DISPLAY" -a -e /usr/bin/gxditview; description=Man page
+application/x-troff-man; /usr/bin/man -l %s; needsterminal; description=Man page
+text/troff; /usr/bin/man -l %s; needsterminal; description=Man page
+text/html; /usr/bin/sensible-browser %s; description=HTML Text; nametemplate=%s.html
+text/html; /usr/bin/firefox-esr %s; description=HTML Text; test=test -n "$DISPLAY";  nametemplate=%s.html
+text/xml; /usr/bin/firefox-esr %s; description=XML Text; test=test -n "$DISPLAY";  nametemplate=%s.xml
+application/x-troff-man; /usr/bin/nroff -t -mandoc -Tutf8; copiousoutput; print=/usr/bin/nroff -t -mandoc -Tutf8 | print text/plain:-
+text/troff; /usr/bin/nroff -t -mandoc -Tutf8; copiousoutput; print=/usr/bin/nroff -t -mandoc -Tutf8 | print text/plain:-
+text/plain; more %s; needsterminal
+application/pkcs12; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs12+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs7-mime; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs7-mime+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs8; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs8+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkix-cert; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkix-cert+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkix-crl; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkix-crl+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-pem-file; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-pem-key; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-pkcs12; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-pkcs7-certificates; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-x509-ca-cert; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-x509-user-cert; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs10; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs10+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-spkac; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-spkac+base64; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+x-scheme-handler/geo; kde-geo-uri-handler --coordinate-template "https://www.google.com/maps/@<LAT>,<LON>,<Z>z" --query-template "https://www.google.com/maps/search/<Q>" --fallback "https://www.google.com/maps/" %s; test=test -n "$DISPLAY"
+inode/directory; kfmclient --mimetype inode/directory openURL %s; test=test -n "$DISPLAY"
+text/html; kfmclient --mimetype text/html openURL %s; test=test -n "$DISPLAY"
+application/xhtml+xml; kfmclient --mimetype text/html openURL %s; test=test -n "$DISPLAY"
+application/xml; kfmclient --mimetype text/html openURL %s; test=test -n "$DISPLAY"
+x-scheme-handler/http; kfmclient --mimetype text/html openURL %s; test=test -n "$DISPLAY"
+x-scheme-handler/https; kfmclient --mimetype text/html openURL %s; test=test -n "$DISPLAY"
+x-scheme-handler/man; kfmclient --mimetype text/html openURL %s; test=test -n "$DISPLAY"
+x-scheme-handler/info; kfmclient --mimetype text/html openURL %s; test=test -n "$DISPLAY"
+application/x-webarchive; kfmclient --mimetype application/x-webarchive openURL %s; test=test -n "$DISPLAY"
+x-scheme-handler/telnet; ktelnetservice5 %s; test=test -n "$DISPLAY"
+x-scheme-handler/rlogin; ktelnetservice5 %s; test=test -n "$DISPLAY"
+x-scheme-handler/ssh; ktelnetservice5 %s; test=test -n "$DISPLAY"
+x-scheme-handler/telnet; ktelnetservice6 %s; test=test -n "$DISPLAY"
+x-scheme-handler/rlogin; ktelnetservice6 %s; test=test -n "$DISPLAY"
+x-scheme-handler/ssh; ktelnetservice6 %s; test=test -n "$DISPLAY"
+application/msword; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/msword-template; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-word.document.macroEnabled.12; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-word.template.macroEnabled.12; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-xpsdocument; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-excel; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-excel.sheet.macroEnabled.12; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-excel.sheet.binary.macroEnabled.12; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-excel.template.macroEnabled.12; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-powerpoint; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-powerpoint.presentation.macroEnabled.12; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-powerpoint.slideshow.macroEnabled.12; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-powerpoint.template.macroEnabled.12; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-visio.drawing.main+xml; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-visio.drawing.macroEnabled.main+xml; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-visio.stencil.main+xml; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-visio.stencil.macroEnabled.main+xml; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-visio.template.main+xml; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.ms-visio.template.macroEnabled.main+xml; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.openxmlformats-officedocument.wordprocessingml.template; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.openxmlformats-officedocument.spreadsheetml.template; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.openxmlformats-officedocument.presentationml.presentation; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.openxmlformats-officedocument.presentationml.slideshow; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.openxmlformats-officedocument.presentationml.template; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.apple.pages; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.apple.numbers; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.apple.keynote; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.oasis.opendocument.text; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.oasis.opendocument.text-flat-xml; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.oasis.opendocument.text-template; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.oasis.opendocument.spreadsheet; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.oasis.opendocument.spreadsheet-flat-xml; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.oasis.opendocument.spreadsheet-template; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.oasis.opendocument.presentation; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.oasis.opendocument.presentation-flat-xml; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.oasis.opendocument.presentation-template; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.oasis.opendocument.graphics; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.sun.xml.writer; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.sun.xml.writer.template; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.sun.xml.calc; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/vnd.sun.xml.impress; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/wps-office.wps; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/wps-office.wpt; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/wps-office.et; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/wps-office.ett; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/wps-office.dps; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/wps-office.dpt; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/x-hwp; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/epub+zip; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/oxps; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/pdf; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/rtf; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+application/x-fictionbook+xml; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+image/vnd.djvu; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+text/csv; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+text/markdown; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+text/plain; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+text/tab-separated-values; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+x-scheme-handler/oo-office; onlyoffice-desktopeditors %s; test=test -n "$DISPLAY"
+x-scheme-handler/geo; kde-geo-uri-handler --coordinate-template "https://www.openstreetmap.org/#map=<Z>/<LAT>/<LON>" --query-template "https://www.openstreetmap.org/search?query=<Q>" --fallback "https://www.openstreetmap.org" %s; test=test -n "$DISPLAY"
+application/x-deb; ark %s; test=test -n "$DISPLAY"
+application/x-cd-image; ark %s; test=test -n "$DISPLAY"
+application/x-bcpio; ark %s; test=test -n "$DISPLAY"
+application/x-cpio; ark %s; test=test -n "$DISPLAY"
+application/x-cpio-compressed; ark %s; test=test -n "$DISPLAY"
+application/x-sv4cpio; ark %s; test=test -n "$DISPLAY"
+application/x-sv4crc; ark %s; test=test -n "$DISPLAY"
+application/x-rpm; ark %s; test=test -n "$DISPLAY"
+application/x-compress; ark %s; test=test -n "$DISPLAY"
+application/gzip; ark %s; test=test -n "$DISPLAY"
+application/x-bzip; ark %s; test=test -n "$DISPLAY"
+application/x-bzip2; ark %s; test=test -n "$DISPLAY"
+application/x-lzma; ark %s; test=test -n "$DISPLAY"
+application/x-xz; ark %s; test=test -n "$DISPLAY"
+application/zlib; ark %s; test=test -n "$DISPLAY"
+application/zstd; ark %s; test=test -n "$DISPLAY"
+application/x-lz4; ark %s; test=test -n "$DISPLAY"
+application/x-lzip; ark %s; test=test -n "$DISPLAY"
+application/x-lrzip; ark %s; test=test -n "$DISPLAY"
+application/x-lzop; ark %s; test=test -n "$DISPLAY"
+application/x-source-rpm; ark %s; test=test -n "$DISPLAY"
+application/vnd.debian.binary-package; ark %s; test=test -n "$DISPLAY"
+application/vnd.efi.iso; ark %s; test=test -n "$DISPLAY"
+application/vnd.ms-cab-compressed; ark %s; test=test -n "$DISPLAY"
+application/x-xar; ark %s; test=test -n "$DISPLAY"
+application/x-iso9660-appimage; ark %s; test=test -n "$DISPLAY"
+application/x-archive; ark %s; test=test -n "$DISPLAY"
+application/x-tar; ark %s; test=test -n "$DISPLAY"
+application/x-compressed-tar; ark %s; test=test -n "$DISPLAY"
+application/x-bzip-compressed-tar; ark %s; test=test -n "$DISPLAY"
+application/x-bzip2-compressed-tar; ark %s; test=test -n "$DISPLAY"
+application/x-tarz; ark %s; test=test -n "$DISPLAY"
+application/x-xz-compressed-tar; ark %s; test=test -n "$DISPLAY"
+application/x-lzma-compressed-tar; ark %s; test=test -n "$DISPLAY"
+application/x-lzip-compressed-tar; ark %s; test=test -n "$DISPLAY"
+application/x-tzo; ark %s; test=test -n "$DISPLAY"
+application/x-lrzip-compressed-tar; ark %s; test=test -n "$DISPLAY"
+application/x-lz4-compressed-tar; ark %s; test=test -n "$DISPLAY"
+application/x-zstd-compressed-tar; ark %s; test=test -n "$DISPLAY"
+application/x-7z-compressed; ark %s; test=test -n "$DISPLAY"
+application/vnd.rar; ark %s; test=test -n "$DISPLAY"
+application/zip; ark %s; test=test -n "$DISPLAY"
+application/x-java-archive; ark %s; test=test -n "$DISPLAY"
+application/x-lha; ark %s; test=test -n "$DISPLAY"
+application/x-stuffit; ark %s; test=test -n "$DISPLAY"
+application/x-arj; ark %s; test=test -n "$DISPLAY"
+application/arj; ark %s; test=test -n "$DISPLAY"
+application/vnd.kde.bluedevil-sendfile; bluedevil-sendfile -k %s; test=test -n "$DISPLAY"
+x-scheme-handler/apt; plasma-discover %s; test=test -n "$DISPLAY"
+application/vnd.debian.binary-package; plasma-discover %s; test=test -n "$DISPLAY"
+application/vnd.flatpak; plasma-discover %s; test=test -n "$DISPLAY"
+application/vnd.flatpak.repo; plasma-discover %s; test=test -n "$DISPLAY"
+application/vnd.flatpak.ref; plasma-discover %s; test=test -n "$DISPLAY"
+x-scheme-handler/appstream; plasma-discover %s; test=test -n "$DISPLAY"
+inode/directory; dolphin %s; test=test -n "$DISPLAY"
+text/plain; kate -b %s; test=test -n "$DISPLAY"
+inode/directory; kate -b %s; test=test -n "$DISPLAY"
+x-scheme-handler/tel; kdeconnect-handler %s; test=test -n "$DISPLAY"
+x-scheme-handler/sms; kdeconnect-handler %s; test=test -n "$DISPLAY"
+application/x-font-ttf; kfontinst %s; test=test -n "$DISPLAY"
+application/x-font-type1; kfontinst %s; test=test -n "$DISPLAY"
+application/x-font-otf; kfontinst %s; test=test -n "$DISPLAY"
+application/x-font-pcf; kfontinst %s; test=test -n "$DISPLAY"
+application/x-font-bdf; kfontinst %s; test=test -n "$DISPLAY"
+application/vnd.kde.fontspackage; kfontinst %s; test=test -n "$DISPLAY"
+font/otf; kfontinst %s; test=test -n "$DISPLAY"
+font/ttf; kfontinst %s; test=test -n "$DISPLAY"
+font/collection; kfontinst %s; test=test -n "$DISPLAY"
+application/x-font-ttf; kfontview %s; test=test -n "$DISPLAY"
+application/x-font-type1; kfontview %s; test=test -n "$DISPLAY"
+application/x-font-otf; kfontview %s; test=test -n "$DISPLAY"
+application/x-font-pcf; kfontview %s; test=test -n "$DISPLAY"
+application/x-font-bdf; kfontview %s; test=test -n "$DISPLAY"
+application/vnd.kde.fontspackage; kfontview %s; test=test -n "$DISPLAY"
+font/otf; kfontview %s; test=test -n "$DISPLAY"
+font/ttf; kfontview %s; test=test -n "$DISPLAY"
+font/collection; kfontview %s; test=test -n "$DISPLAY"
+x-scheme-handler/help; khelpcenter %s; test=test -n "$DISPLAY"
+x-scheme-handler/man; khelpcenter %s; test=test -n "$DISPLAY"
+x-scheme-handler/info; khelpcenter %s; test=test -n "$DISPLAY"
+application/x-kwallet; kwalletmanager5 %s; test=test -n "$DISPLAY"
+text/plain; kwrite %s; test=test -n "$DISPLAY"
+x-scheme-handler/systemsettings; plasma-open-settings %s; test=test -n "$DISPLAY"
+application/x-openvpn-profile; systemsettings kcm_networkmanagement --args VPN=%s; test=test -n "$DISPLAY"
+application/x-cisco-vpn-settings; systemsettings kcm_networkmanagement --args VPN=%s; test=test -n "$DISPLAY"
+text/english; vim %s; needsterminal; test=command -v vim > /dev/null 2>&1
+text/plain; vim %s; needsterminal; test=command -v vim > /dev/null 2>&1
+text/x-makefile; vim %s; needsterminal; test=command -v vim > /dev/null 2>&1
+text/x-c++hdr; vim %s; needsterminal; test=command -v vim > /dev/null 2>&1
+text/x-c++src; vim %s; needsterminal; test=command -v vim > /dev/null 2>&1
+text/x-chdr; vim %s; needsterminal; test=command -v vim > /dev/null 2>&1
+text/x-csrc; vim %s; needsterminal; test=command -v vim > /dev/null 2>&1
+text/x-java; vim %s; needsterminal; test=command -v vim > /dev/null 2>&1
+text/x-moc; vim %s; needsterminal; test=command -v vim > /dev/null 2>&1
+text/x-pascal; vim %s; needsterminal; test=command -v vim > /dev/null 2>&1
+text/x-tcl; vim %s; needsterminal; test=command -v vim > /dev/null 2>&1
+text/x-tex; vim %s; needsterminal; test=command -v vim > /dev/null 2>&1
+application/x-shellscript; vim %s; needsterminal; test=command -v vim > /dev/null 2>&1
+text/x-c; vim %s; needsterminal; test=command -v vim > /dev/null 2>&1
+text/x-c++; vim %s; needsterminal; test=command -v vim > /dev/null 2>&1
+x-scheme-handler/geo; kde-geo-uri-handler --coordinate-template "https://wheelmap.org/?lat=<LAT>&lon=<LON>" --query-template "https://wheelmap.org/search?q=<Q>" --fallback "https://wheelmap.org" %s; test=test -n "$DISPLAY"
+text/plain; view %s; edit=vim %s; compose=vim %s; test=test -x /usr/bin/vim; needsterminal
+text/html; /usr/bin/lynx -force_html %s; needsterminal; description=HTML Text; nametemplate=%s.html
+application/zip; unzip -l %s; nametemplate=%s.zip; copiousoutput
+text/plain; view %s; edit=vi %s; compose=vi %s; needsterminal
+image/png;  /usr/bin/firefox-esr %s; description=PNG Image; test=test -n "$DISPLAY";  nametemplate=%s.png
+image/jpeg;  /usr/bin/firefox-esr %s; description=JPEG Image; test=test -n "$DISPLAY";  nametemplate=%s.jpeg
+image/gif;  /usr/bin/firefox-esr %s; description=GIF Image; test=test -n "$DISPLAY";  nametemplate=%s.gif
+text/html; /usr/bin/lynx -dump -force_html %s; copiousoutput; description=HTML Text; nametemplate=%s.html
+application/x-troff-man; /usr/bin/man -Tascii -l %s | col -b; copiousoutput; description=Man page
+text/troff; /usr/bin/man -Tascii -l %s | col -b; copiousoutput; description=Man page
+text/*; less %s; needsterminal
+text/*; view %s; edit=vim %s; compose=vim %s; test=test -x /usr/bin/vim; needsterminal
+application/x-tar; /bin/tar tvf %s; print=/bin/tar tvf - | print text/plain:-; copiousoutput
+application/x-gtar; /bin/tar tvf %s; print=/bin/tar tvf - | print text/plain:-; copiousoutput
+application/x-ustar; /bin/tar tvf %s; print=/bin/tar tvf - | print text/plain:-; copiousoutput
+text/*; more %s; needsterminal
+text/*; view %s; edit=vi %s; compose=vi %s; needsterminal
+application/msword; wordview %s; description="MS Word Text"; test=test "$DISPLAY"
+application/msword; catdoc %s; copiousoutput; description="MS Word Text";
+application/vnd.ms-excel; xls2csv %s; copiousoutput; description="MS Excel sheet";
+application/vnd.ms-powerpoint; catppt %s; copiousoutput; description="MS PowerPoint presentation";
+application/postscript; /usr/bin/ps2txt '%s'; copiousoutput; description=Postscript
+application/vnd.debian.binary-package; /usr/lib/mime/debian-view %s; needsterminal; description=Debian GNU/Linux Package; nametemplate=%s.deb
